@@ -6,7 +6,19 @@ namespace UnitTestingExercise
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
+            int m = 2;
+            int n = 1;
+            while (m >= n)
+            {
+                if ((m & (m - 1)) < n)
+                {
+                    Console.WriteLine(m);
+                }
+                m &= m - 1;
+            }
+                
+            
         }
     }
 }
